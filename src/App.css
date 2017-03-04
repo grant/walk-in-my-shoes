@@ -1,24 +1,84 @@
-.App {
+html, body, #root, .App {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  z-index: 100;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.condition {
+
+}
+
+.condition li {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.timer {
+
+  padding: 10px;
+}
+
+.art {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #aaaaaa;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.choices {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.choice {
+  display: inline-block;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.modals {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-intro {
-  font-size: large;
+.modal {
+  background-color: red;
+  z-index: 100;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.modal h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.modal li {
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid black;
 }

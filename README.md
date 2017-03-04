@@ -1,6 +1,12 @@
 # Walk In My Shoes
 Abortion Access Hackathon
 
+## Setup web deployment on heroku
+
+```sh
+heroku create walk-in-my-shoes --buildpack https://github.com/mars/create-react-app-buildpack.git
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
