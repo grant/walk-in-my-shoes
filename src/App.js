@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// css
 import './reset.css';
 import './App.css';
 
+// images
+import btnMenu from './img/btnMenu.png';
+import btnClose from './img/btnClose.png';
+
+/**
+ * The main component for the App.
+ */
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header>
+          <img className='btnMenu' src={btnMenu} alt=""/>
           <ul className='condition'>
             <li>Condition X</li>
             <li>Condition Y</li>
