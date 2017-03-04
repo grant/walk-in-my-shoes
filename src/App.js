@@ -31,6 +31,7 @@ class App extends Component {
         <div className="modals">
           <div className="modal">
             <h1>final</h1>
+            <img className='btnClose' src={btnClose} alt=""/>
             <ul className="options">
               <li>Clinic City provides services within 20 weeks</li>
               <li>Clinic City provides services within 20 weeks</li>
