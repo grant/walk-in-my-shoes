@@ -83,10 +83,21 @@ header {
 
 .choices {
   text-align: center;
+  padding: 15px 0 5px 0;
 }
 .choice {
   display: inline-block;
-  padding: 5px;
+  position: relative;
+  padding: 2px;
+}
+.choice .text {
+  position: absolute;
+  width: 100%;
+  padding: 7px;
+  left: 0;
+}
+.choice img {
+  width: 100px;
 }
 
 .modals {
@@ -101,7 +112,7 @@ header {
   position: relative;
   background-color: #e7daff;
   border-radius: 5px;
-  border: 4px solid #957fd7;
+  border: 4px solid #473774;
   z-index: 100;
 }
 
