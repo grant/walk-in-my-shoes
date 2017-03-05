@@ -81,10 +81,10 @@ More agency for user (originally game had no choices - it was purely random)
 Future steps: Some more polish, ideally more content (giving more insight into circumstances accross the country), get it out there in the world
 
 Our team is:
-Andrea: UX & illustrations
-Grant: Front end
-Stephanie: Team leader & back end
-Steven: Content and presentation
+- Andrea: UX & illustrations
+- Grant: Front end
+- Stephanie: Team leader & back end
+- Steven: Content and presentation
 
 Thanks:
 Somer: For suggestion the project
