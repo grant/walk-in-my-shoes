@@ -40,19 +40,31 @@ class App extends Component {
       });
     }
 
+    /**
+     * When clicking on a choice button.
+     */
     function onChoice(button) {
       var text = button.text;
       console.log('selected', text);
     }
 
+    /**
+     * When clicking the menu button.
+     */
+    function onMenuClick() {
+      console.log('clicked on the menu');
+    }
+
+    var choiceText = 'Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.';
+
     return (
       <div className="App">
         <header>
-          <img className='btnMenu' src={btnMenu} alt=""/>
-          <ul className='condition'>
-            <li>Condition X</li>
-            <li>Condition Y</li>
-          </ul>
+          <img className='btnMenu' src={btnMenu} onClick={onMenuClick.bind(this)} alt=""/>
+          {/*<ul className='condition'>
+                      <li>Condition X</li>
+                      <li>Condition Y</li>
+                    </ul>*/}
           <div className="timer">
             11:00
           </div>
@@ -76,7 +88,7 @@ class App extends Component {
         </div>
         <footer className="footer">
           <div className="choice-box">
-            <p className="text">Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.</p>
+            <p className="text">{choiceText}</p>
             <ul className="choices">
               {choices.map(c => <li className="choice" key={c.img} onClick={onChoice.bind(this, c)}>
                 <img src={c.img} alt=""/>
