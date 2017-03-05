@@ -1,7 +1,7 @@
 # Walk In My Shoes
 Abortion Access Hackathon
 
-| Before you criticize a man, walk a mile in his shoes
+> Before you criticize a man, walk a mile in his shoes
 
 ## Setup web deployment on heroku
 
