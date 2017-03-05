@@ -29,13 +29,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 
-# Presentation (written by Steven)
+# Presentation (written by Steven, edited by Grant)
 
-Hello, our project is called: Walk in My Shoes
+Hello, our project is called: Walk in My Shoes.
+It is based on a card game created by Women's Health Specialists.
 
-It is based on a card game created by Women's Health Specialists
-
-Why???? It turns abstract ideas or soundbites from the news, media & politicians into the real world impact on individuals. We as a team want to make that more easily accessible.
+## Why?
+It turns abstract ideas or soundbites from the news, media & politicians into the real world impact on individuals. We as a team want to make that more easily accessible.
 
 The game's intention is to build empathy about the different barriors people face when trying to access abortion services.
 
@@ -45,13 +45,9 @@ The mechanic of the game is to lead the player through a series of these factors
 Those factors include language, access to transportation & payment funds.
 The game emphasizes the time pressure involved and the additional impact delays can cause if an abortion cannot be accessed before 12 weeks.
 
-***
-
 The game starts with a random profile of a person seeking an abortion. Each person is at a different stage of pregnancy.
 
-***
-
-Let's see the game:
+## Gameplay
 
 The user starts with a short biography and description of their situation.
 
@@ -67,18 +63,19 @@ Then presented with their first choice - the language they speak. Not really a c
 - Health (factors which may impact having an abortion)
 - Final (your visit)
 
-Aims: Digital makes it easier to get in the hands of users
+### Aims
+Digital makes it easier to get in the hands of users.
 More agency for user (originally game had no choices - it was purely random)
 
-Future steps: Some more polish, ideally more content (giving more insight into circumstances accross the country), get it out there in the world
+### Future steps
+Some more polish, ideally more content (giving more insight into circumstances accross the country), get it out there in the world.
 
-Our team is:
+## Our Team
 - Andrea: UX & illustrations
 - Grant: Front end
 - Stephanie: Team leader & back end
 - Steven: Content and presentation
 
-Thanks:
-Somer: For suggestion the project
-
-Women's Health Specialists: For content and support
+## Special Thanks
+**Somer**: For suggestion the project
+**Women's Health Specialists**: For content and support
