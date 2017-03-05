@@ -47,11 +47,11 @@ html body #root {
 .timerFills {
   position: absolute;
   opacity: 0.5;
-  top: 9px;
-  right: 0;
+  top: 12px;
+  right: -5px;
   fill: #ff1515;
-  width: 145px;
-  height: 145px;
+  width: 147px;
+  height: 147px;
 }
 
 header {

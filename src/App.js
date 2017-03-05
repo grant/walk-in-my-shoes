@@ -23,8 +23,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalClosed: false
+      modalClosed: false,
+      timerDate: +new Date(),
     };
+
+    setInterval(() => {
+      this.setState({
+        date: +new Date()
+      });
+    }, 100);
   }
 
   render() {
@@ -68,19 +75,22 @@ class App extends Component {
      * @return {[type]}           [description]
      */
     function getTimer(fullRatio) {
-      setTimeout(function() {
-        var radius = 65;
-        console.log(arc);
+      var radius = 62;
+      if (document.getElementById("theSvgArc")) {
         document
           .getElementById("theSvgArc")
           .setAttribute("d", arc.describeArc(radius, radius, radius, 0, fullRatio * 360));
-      }, 10);
+      }
+
       return (
         <svg className="timerFills">
           <path id="theSvgArc"/>
         </svg>
       );
     }
+
+    var diffSinceLastDate = (this.state.date - this.state.timerDate) || 0;
+    var timerRatio = Math.min(diffSinceLastDate/10000, 0.99);
 
     return (
       <div className="App">
@@ -92,7 +102,7 @@ class App extends Component {
                     </ul>*/}
           <img className='shellTimer' src={shellTimer}/>
           <img className='timerOverlay' src={timerOverlay}/>
-          {getTimer(.95)}
+          {getTimer(timerRatio)}
         </header>
         <div className="art">
           ART

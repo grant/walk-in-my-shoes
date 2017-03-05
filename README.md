@@ -23,3 +23,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Inspiration
 - http://www.planetofsuccess.com/blog/2011/developing-empathy-walk-a-mile-in-someone%E2%80%99s-shoes/
+
+## Other
+- Data: https://docs.google.com/spreadsheets/d/1uEyYqIlQjDJIuxJrZcVyuY1N2DWCaY3ovyR8uc394ak/edit#gid=0
