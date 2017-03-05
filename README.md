@@ -57,23 +57,15 @@ The user starts with a short biography and description of their situation.
 
 Then presented with their first choice - the language they speak. Not really a choice but more of a hint which may or may not lead to the expected outcome.
 
-Language (English may not be your primary language. You maybe able to speak but not read English.)
-
-Provider (finding who can provide you with abortion services)
-
-Payment (do you have insurance cover, can you get support from a fund)
-
-Transportation (travel to clinic)
-
-Child care
-
-Confidentiality (there maybe people you don't wish to know you're having an abortion)
-
-Time-off (from work)
-
-Health (factors which may impact having an abortion)
-
-Final (your visit)
+- Language (English may not be your primary language. You maybe able to speak but not read English.)
+- Provider (finding who can provide you with abortion services)
+- Payment (do you have insurance cover, can you get support from a fund)
+- Transportation (travel to clinic)
+- Child care
+- Confidentiality (there maybe people you don't wish to know you're having an abortion)
+- Time-off (from work)
+- Health (factors which may impact having an abortion)
+- Final (your visit)
 
 Aims: Digital makes it easier to get in the hands of users
 More agency for user (originally game had no choices - it was purely random)
