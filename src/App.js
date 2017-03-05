@@ -15,6 +15,11 @@ import btnCTA1_Hit from './img/btnCTA1_Hit.png';
 import btnCTA2_Hit from './img/btnCTA2_Hit.png';
 import btnCTA3_Hit from './img/btnCTA3_Hit.png';
 
+import childcare from './img/cover/childcare.png';
+import confidentiality from './img/cover/confidentiality.png';
+import provider from './img/cover/provider.png';
+import transportation from './img/cover/transportation.png';
+
 import timerFill from './img/timerFill.png';
 import timerOverlay from './img/timerOverlay.png';
 import shellTimer from './img/shellTimer.png';
@@ -106,10 +111,16 @@ class App extends Component {
     var diffSinceLastDate = (this.state.date - this.state.timerDate) || 0;
     var timerRatio = Math.min(diffSinceLastDate/10000, 0.99);
 
+    var childcareImg = `url(${childcare})`;
+    var confidentialityImg = `url(${confidentiality})`;
+    var providerImg = `url(${provider})`;
+    var transportationImg = `url(${transportation})`;
+
     return (
       <div className="App">
         <header>
           <img className='btnMenu' src={btnMenu} onClick={onMenuClick.bind(this)} alt=""/>
+          <h1 className='title' >Walk in My Shoes</h1>
           {/*<ul className='condition'>
                       <li>Condition X</li>
                       <li>Condition Y</li>
@@ -119,7 +130,13 @@ class App extends Component {
           <span className="timeText">10 weeks</span>
           {getTimer(timerRatio)}
         </header>
-        <div className="art">
+        <div className="art" style={{
+          // backgroundImage: childcareImg
+          // backgroundImage: confidentialityImg
+          // backgroundImage: confidentialityImg
+          backgroundImage: transportationImg
+        }
+        }>
         </div>
         <div className="modals">
           {!this.state.modalClosed ? (
