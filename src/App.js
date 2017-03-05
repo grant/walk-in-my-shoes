@@ -11,6 +11,9 @@ import btnClose from './img/btnClose.png';
 import btnCTA1 from './img/btnCTA1.png';
 import btnCTA2 from './img/btnCTA2.png';
 import btnCTA3 from './img/btnCTA3.png';
+import btnCTA1_Hit from './img/btnCTA1_Hit.png';
+import btnCTA2_Hit from './img/btnCTA2_Hit.png';
+import btnCTA3_Hit from './img/btnCTA3_Hit.png';
 
 import timerFill from './img/timerFill.png';
 import timerOverlay from './img/timerOverlay.png';
@@ -37,13 +40,16 @@ class App extends Component {
   render() {
     var choices = [{
       img: btnCTA1,
-      text: 'Get gas'
+      img_hover: btnCTA1_Hit,
+      text: 'Get gas1'
     }, {
       img: btnCTA2,
-      text: 'Get gas'
+      img_hover: btnCTA2_Hit,
+      text: 'Get gas2'
     }, {
       img: btnCTA3,
-      text: 'Get gas'
+      img_hover: btnCTA3_Hit,
+      text: 'Get gas3'
     }];
 
     function onClose() {
@@ -102,10 +108,10 @@ class App extends Component {
                     </ul>*/}
           <img className='shellTimer' src={shellTimer}/>
           <img className='timerOverlay' src={timerOverlay}/>
+          <span className="timeText">10 weeks</span>
           {getTimer(timerRatio)}
         </header>
         <div className="art">
-          ART
         </div>
         <div className="modals">
           {!this.state.modalClosed ? (
@@ -125,8 +131,12 @@ class App extends Component {
           <div className="choice-box">
             <p className="text">{choiceText}</p>
             <ul className="choices">
-              {choices.map(c => <li className="choice" key={c.img} onClick={onChoice.bind(this, c)}>
-                <img src={c.img} alt=""/>
+              {choices.map(c => <li
+                  className="choice"
+                  key={c.img}
+                  onClick={onChoice.bind(this, c)}
+                >
+                {false ? <img src={c.img_hover} alt=""/> : <img src={c.img} alt=""/>}
                 <span className="text">{c.text}</span>
               </li>)}
             </ul>

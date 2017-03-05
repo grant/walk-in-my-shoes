@@ -47,7 +47,7 @@ html body #root {
 }
 .timerFills {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.8;
   top: 12px;
   right: -5px;
   fill: #ff1515;
@@ -92,6 +92,16 @@ header {
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
 }
+.timeText {
+  position: absolute;
+  right: 0;
+  top: 66px;
+  width: 163px;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  opacity: 0.8;
+}
 
 .art {
   position: absolute;
@@ -99,7 +109,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #aaaaaa;
+  background: url(http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .footer {
