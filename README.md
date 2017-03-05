@@ -4,6 +4,8 @@
 
 *-Harper Lee, To Kill a Mockingbird. J.B. Lippincott & Co., 1960*
 
+![Walk In My Shoes](https://cloud.githubusercontent.com/assets/744973/23591962/2c1fad5a-01ae-11e7-9c87-3a004bcdf9d3.jpg)
+
 This is a simple game used to teach empathy. It was created at the Abortion Access Hackathon in SF March 4-5th, 2017.
 
 ## What is empathy all about?
