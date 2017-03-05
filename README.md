@@ -26,3 +26,67 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Other
 - Data: https://docs.google.com/spreadsheets/d/1uEyYqIlQjDJIuxJrZcVyuY1N2DWCaY3ovyR8uc394ak/edit#gid=0
+
+---
+
+# Presentation (written by Steven)
+
+Hello, our project is called: Walk in My Shoes
+
+It is based on a card game created by Women's Health Specialists
+
+Why???? It turns abstract ideas or soundbites from the news, media & politicians into the real world impact on individuals. We as a team want to make that more easily accessible.
+
+The game's intention is to build empathy about the different barriors people face when trying to access abortion services.
+
+Access is not binary it is a variety of factors which can combine to make accessing services more difficult.
+
+The mechanic of the game is to lead the player through a series of these factors, examining the challenge it presents and possible delay it can cause to accessing services.
+Those factors include language, access to transportation & payment funds.
+The game emphasizes the time pressure involved and the additional impact delays can cause if an abortion cannot be accessed before 12 weeks.
+
+***
+
+The game starts with a random profile of a person seeking an abortion. Each person is at a different stage of pregnancy.
+
+***
+
+Let's see the game:
+
+The user starts with a short biography and description of their situation.
+
+Then presented with their first choice - the language they speak. Not really a choice but more of a hint which may or may not lead to the expected outcome.
+
+Language (English may not be your primary language. You maybe able to speak but not read English.)
+
+Provider (finding who can provide you with abortion services)
+
+Payment (do you have insurance cover, can you get support from a fund)
+
+Transportation (travel to clinic)
+
+Child care
+
+Confidentiality (there maybe people you don't wish to know you're having an abortion)
+
+Time-off (from work)
+
+Health (factors which may impact having an abortion)
+
+Final (your visit)
+
+Aims: Digital makes it easier to get in the hands of users
+More agency for user (originally game had no choices - it was purely random)
+
+Future steps: Some more polish, ideally more content (giving more insight into circumstances accross the country), get it out there in the world
+
+Our team is:
+Andrea: UX & illustrations
+Grant: Front end
+Stephanie: Team leader & back end
+Steven: Content and presentation
+
+Thanks:
+Somer: For suggestion the project
+
+Women's Health Specialists: For content and support
