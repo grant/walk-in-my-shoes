@@ -42,12 +42,12 @@ class App extends Component {
       transportationImg
     ];
     var randomImage = images[Math.floor(Math.random()*images.length)];
-    console.log(randomImage);
 
     this.state = {
-      modalClosed: false,
+      modalClosed: true,
       timerDate: +new Date(),
       backgroundImage: randomImage,
+      choices: []
     };
 
     setInterval(() => {
@@ -56,30 +56,41 @@ class App extends Component {
       });
     }, 100);
 
-    console.log('hi');
+    var t = this;
+
+    // POST http://localhost:5000/decision
+    // {
+    //
+    // }
+    // POST http://localhost:5000/start
     fetch('http://localhost:5000/start', {
-      method: 'get'
-    }).then(function(response) {
-      console.log('got');
-      console.log(response.body);
-    });
+      method: 'POST'
+    })
+      .then(function(res){
+        return res.json();
+      })
+      .then(function(data){
+        console.log(data);
+        t.setState({
+          bioText: data.bio_full_text,
+          choices: [{
+            text: data.choice1_option_text,
+            img: btnCTA1,
+            img_hover: btnCTA1_Hit,
+          }, {
+            text: data.choice2_option_text,
+            img: btnCTA2,
+            img_hover: btnCTA2_Hit,
+          }, {
+            img: btnCTA3,
+            img_hover: btnCTA3_Hit,
+            text: data.choice3_option_text
+          }]
+        });
+      });
   }
 
   render() {
-    var choices = [{
-      img: btnCTA1,
-      img_hover: btnCTA1_Hit,
-      text: 'Get gas1'
-    }, {
-      img: btnCTA2,
-      img_hover: btnCTA2_Hit,
-      text: 'Get gas2'
-    }, {
-      img: btnCTA3,
-      img_hover: btnCTA3_Hit,
-      text: 'Get gas3'
-    }];
-
     function onClose() {
       this.setState({
         modalClosed: true
@@ -161,9 +172,9 @@ class App extends Component {
         </div>
         <footer className="footer">
           <div className="choice-box">
-            <p className="text">{choiceText}</p>
+            <p className="text">{this.state.bioText}</p>
             <ul className="choices">
-              {choices.map(c => <li
+              {this.state.choices.map(c => <li
                   className="choice"
                   key={c.img}
                   onClick={onChoice.bind(this, c)}
