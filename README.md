@@ -2,7 +2,7 @@
 
 > “You never really know a man until you understand things from his point of view, until you climb into his skin and walk around in it.”
 
-**-Harper Lee, To Kill a Mockingbird. J.B. Lippincott & Co., 1960**
+*-Harper Lee, To Kill a Mockingbird. J.B. Lippincott & Co., 1960*
 
 This is a simple game used to teach empathy. It was created at the Abortion Access Hackathon in SF March 4-5th, 2017.
 
