@@ -15,6 +15,13 @@ import btnCTA3 from './img/btnCTA3.png';
  * The main component for the App.
  */
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modalClosed: false
+    };
+  }
+
   render() {
     var choices = [{
       img: btnCTA1,
@@ -26,6 +33,12 @@ class App extends Component {
       img: btnCTA3,
       text: 'Get gas'
     }];
+
+    function onClose() {
+      this.setState({
+        modalClosed: true
+      });
+    }
 
     return (
       <div className="App">
@@ -43,16 +56,18 @@ class App extends Component {
           ART
         </div>
         <div className="modals">
-          <div className="modal">
-            <h1>final</h1>
-            <img className='btnClose' src={btnClose} alt=""/>
-            <ul className="options">
-              <li>Clinic City provides services within 20 weeks</li>
-              <li>Clinic City provides services within 20 weeks</li>
-              <li>Clinic City provides services within 20 weeks</li>
-              <li>Clinic City provides services within 20 weeks</li>
-            </ul>
-          </div>
+          {!this.state.modalClosed ? (
+            <div className="modal">
+              <h1>final</h1>
+              <img className='btnClose' src={btnClose} alt="" onClick={onClose.bind(this)}/>
+              <ul className="options">
+                <li>Clinic City provides services within 20 weeks</li>
+                <li>Clinic City provides services within 20 weeks</li>
+                <li>Clinic City provides services within 20 weeks</li>
+                <li>Clinic City provides services within 20 weeks</li>
+              </ul>
+            </div>
+          ) : ''}
         </div>
         <footer className="footer">
           <div className="choice-box">

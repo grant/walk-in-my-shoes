@@ -13,8 +13,13 @@ html, body, #root, .App {
   height: 100%;
 }
 
+.App {
+  position: relative;
+}
+
 html body #root {
   font-family: 'Francois One', sans-serif;
+  overflow: hidden;
 }
 
 /* Header */
