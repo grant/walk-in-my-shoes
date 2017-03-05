@@ -13,6 +13,11 @@ Being able to empathize means to be capable of identifying and understanding ano
 
 # Development
 
+```
+yarn
+npm start
+```
+
 ## Setup web deployment on heroku
 
 ```sh
