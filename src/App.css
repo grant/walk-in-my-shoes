@@ -78,23 +78,38 @@ header {
   width: 100%;
   border-top: 3px solid #473774;
   padding: 5px;
+  height: 40px;
   background: #957fd7;
+}
+
+.choice-box {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+  right: auto;
+  background-color: #e7daff;
+  border: 3px solid #473774;
+  padding: 5px;
 }
 
 .choices {
   text-align: center;
   padding: 15px 0 5px 0;
+  margin-bottom: -30px;
 }
 .choice {
+  cursor: pointer;
   display: inline-block;
   position: relative;
-  padding: 2px;
+  padding: 2px 10px;
 }
 .choice .text {
   position: absolute;
   width: 100%;
-  padding: 7px;
+  padding: 9px;
   left: 0;
+  color: white;
 }
 .choice img {
   width: 100px;

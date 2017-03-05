@@ -18,13 +18,13 @@ class App extends Component {
   render() {
     var choices = [{
       img: btnCTA1,
-      text: 'hi'
+      text: 'Get gas'
     }, {
       img: btnCTA2,
-      text: 'hii'
+      text: 'Get gas'
     }, {
       img: btnCTA3,
-      text: 'hiiiii'
+      text: 'Get gas'
     }];
 
     return (
@@ -55,13 +55,15 @@ class App extends Component {
           </div>
         </div>
         <footer className="footer">
-          <p className="text">Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.</p>
-          <ul className="choices">
-            {choices.map(c => <li className="choice" key={c.img}>
-              <img src={c.img} alt=""/>
-              <span className="text">{c.text}</span>
-            </li>)}
-          </ul>
+          <div className="choice-box">
+            <p className="text">Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.</p>
+            <ul className="choices">
+              {choices.map(c => <li className="choice" key={c.img}>
+                <img src={c.img} alt=""/>
+                <span className="text">{c.text}</span>
+              </li>)}
+            </ul>
+          </div>
         </footer>
       </div>
     );
