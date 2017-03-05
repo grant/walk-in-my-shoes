@@ -27,6 +27,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Other
 - Data: https://docs.google.com/spreadsheets/d/1uEyYqIlQjDJIuxJrZcVyuY1N2DWCaY3ovyR8uc394ak/edit#gid=0
 
+## Server logic
+See server repo: https://github.com/gitsteph/walk_in_my_shoes
+
 ---
 
 # Presentation (written by Steven, edited by Grant)
