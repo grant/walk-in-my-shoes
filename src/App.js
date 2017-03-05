@@ -35,6 +35,14 @@ class App extends Component {
         date: +new Date()
       });
     }, 100);
+
+    console.log('hi');
+    fetch('http://localhost:5000/start', {
+      method: 'get'
+    }).then(function(response) {
+      console.log('got');
+      console.log(response.body);
+    });
   }
 
   render() {
