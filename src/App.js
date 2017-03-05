@@ -30,9 +30,24 @@ import shellTimer from './img/shellTimer.png';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    var childcareImg = `url(${childcare})`;
+    var confidentialityImg = `url(${confidentiality})`;
+    var providerImg = `url(${provider})`;
+    var transportationImg = `url(${transportation})`;
+    var images = [
+      childcareImg,
+      confidentialityImg,
+      providerImg,
+      transportationImg
+    ];
+    var randomImage = images[Math.floor(Math.random()*images.length)];
+    console.log(randomImage);
+
     this.state = {
       modalClosed: false,
       timerDate: +new Date(),
+      backgroundImage: randomImage,
     };
 
     setInterval(() => {
@@ -111,11 +126,6 @@ class App extends Component {
     var diffSinceLastDate = (this.state.date - this.state.timerDate) || 0;
     var timerRatio = Math.min(diffSinceLastDate/10000, 0.99);
 
-    var childcareImg = `url(${childcare})`;
-    var confidentialityImg = `url(${confidentiality})`;
-    var providerImg = `url(${provider})`;
-    var transportationImg = `url(${transportation})`;
-
     return (
       <div className="App">
         <header>
@@ -131,10 +141,7 @@ class App extends Component {
           {getTimer(timerRatio)}
         </header>
         <div className="art" style={{
-          // backgroundImage: childcareImg
-          // backgroundImage: confidentialityImg
-          // backgroundImage: confidentialityImg
-          backgroundImage: transportationImg
+          backgroundImage: this.state.backgroundImage
         }
         }>
         </div>
