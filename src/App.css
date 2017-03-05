@@ -30,6 +30,30 @@ html body #root {
   cursor: pointer;
 }
 
+.shellTimer {
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  right: 0;
+  top: 0;
+}
+.timerOverlay {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 140px;
+  height: 140px;
+}
+.timerFills {
+  position: absolute;
+  opacity: 0.5;
+  top: 9px;
+  right: 0;
+  fill: #ff1515;
+  width: 145px;
+  height: 145px;
+}
+
 header {
   position: absolute;
   background: #957fd7;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import arc from './arc.jsx';
 
 // css
 import './reset.css';
@@ -10,6 +11,10 @@ import btnClose from './img/btnClose.png';
 import btnCTA1 from './img/btnCTA1.png';
 import btnCTA2 from './img/btnCTA2.png';
 import btnCTA3 from './img/btnCTA3.png';
+
+import timerFill from './img/timerFill.png';
+import timerOverlay from './img/timerOverlay.png';
+import shellTimer from './img/shellTimer.png';
 
 /**
  * The main component for the App.
@@ -57,6 +62,26 @@ class App extends Component {
 
     var choiceText = 'Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.';
 
+    /**
+     * Gets the fillings of the timer
+     * @param  {[type]} fullRatio [description]
+     * @return {[type]}           [description]
+     */
+    function getTimer(fullRatio) {
+      setTimeout(function() {
+        var radius = 65;
+        console.log(arc);
+        document
+          .getElementById("theSvgArc")
+          .setAttribute("d", arc.describeArc(radius, radius, radius, 0, fullRatio * 360));
+      }, 10);
+      return (
+        <svg className="timerFills">
+          <path id="theSvgArc"/>
+        </svg>
+      );
+    }
+
     return (
       <div className="App">
         <header>
@@ -65,9 +90,9 @@ class App extends Component {
                       <li>Condition X</li>
                       <li>Condition Y</li>
                     </ul>*/}
-          <div className="timer">
-            11:00
-          </div>
+          <img className='shellTimer' src={shellTimer}/>
+          <img className='timerOverlay' src={timerOverlay}/>
+          {getTimer(.95)}
         </header>
         <div className="art">
           ART
