@@ -40,6 +40,11 @@ class App extends Component {
       });
     }
 
+    function onChoice(button) {
+      var text = button.text;
+      console.log('selected', text);
+    }
+
     return (
       <div className="App">
         <header>
@@ -73,7 +78,7 @@ class App extends Component {
           <div className="choice-box">
             <p className="text">Bacon ipsum dolor amet corned beef chicken chuck landjaeger, burgdoggen jowl ham hock strip steak meatloaf biltong beef ribs short ribs.</p>
             <ul className="choices">
-              {choices.map(c => <li className="choice" key={c.img}>
+              {choices.map(c => <li className="choice" key={c.img} onClick={onChoice.bind(this, c)}>
                 <img src={c.img} alt=""/>
                 <span className="text">{c.text}</span>
               </li>)}
