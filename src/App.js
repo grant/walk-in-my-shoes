@@ -60,7 +60,10 @@ class App extends Component {
 
     // POST http://localhost:5000/decision
     // {
-    //
+    //    game_id
+    //    choice_id
+    //    bio_days_pregnant
+    //    current_category
     // }
     // POST http://localhost:5000/start
     fetch('http://localhost:5000/start', {
@@ -72,19 +75,25 @@ class App extends Component {
       .then(function(data){
         console.log(data);
         t.setState({
+          game_id: data.game_id,
           bioText: data.bio_full_text,
+          bio_days_pregnant: data.bio_days_pregnant,
+          current_category: data.current_category,
           choices: [{
             text: data.choice1_option_text,
             img: btnCTA1,
             img_hover: btnCTA1_Hit,
+            id: data.choice1_id
           }, {
             text: data.choice2_option_text,
             img: btnCTA2,
             img_hover: btnCTA2_Hit,
+            id: data.choice2_id
           }, {
             img: btnCTA3,
             img_hover: btnCTA3_Hit,
-            text: data.choice3_option_text
+            text: data.choice3_option_text,
+            id: data.choice3_id
           }]
         });
       });
@@ -102,7 +111,21 @@ class App extends Component {
      */
     function onChoice(button) {
       var text = button.text;
-      console.log('selected', text);
+      console.log('selected', button);
+      var id = button.id;
+      console.log('id', id);
+      fetch('http://localhost:5000/decision', {
+        method: 'POST',
+        body: {
+
+        }
+      })
+        .then(function(res) {
+          return res.json();
+        })
+        .then(function(data) {
+          console.log(data);
+        });
     }
 
     /**
